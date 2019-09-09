@@ -1,0 +1,7 @@
+li.card-title {
+  border-bottom: 1px solid black;
+}
+
+li.card-title .card-title h2 {
+  text-align: justify;
+}

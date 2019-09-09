@@ -1,0 +1,10 @@
+<div class="taskColumn">
+  <h1>
+    <input type='text' value={{title}} ng-mode='title'>
+  </h1>
+  <br>
+  <ul class="list-group">
+    <task-card card="card" ng-repeat="card in $ctrl.cards track by card.id">
+    </task-card>
+  </ul>
+</div>

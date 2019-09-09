@@ -1,0 +1,30 @@
+.taskColumn {
+  display: inline-block;
+  vertical-align:top;
+  margin-right: 2%;
+  max-width: 300px;
+  padding: 0.5px 5px;
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+.taskColumn h1 {
+  text-align: center;
+}
+
+.taskColumn input {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid thistle;
+  background-color: transparent;
+  text-align: center;
+}
+
+.taskColumn ul {
+  padding-inline-start: 0px;
+  padding: 0px 0.5px;
+}
+
+.taskColumn ul li {
+  list-style-type: none;
+}
