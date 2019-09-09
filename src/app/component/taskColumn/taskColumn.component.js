@@ -1,8 +1,8 @@
 function taskColumnController($scope, $window) {
-  var $ctrl = this;
+  const $ctrl = this;
   $ctrl.$onInit = function () {
-    $scope.title  = $ctrl.data.title;
-    $ctrl.cards   = $ctrl.data.cards;
+    $scope.title   = $ctrl.data.title;
+    $scope.cards   = $window.angular.copy($ctrl.data.cards);
   }
 }
 angular.module('todoApp.taskColumn', [

@@ -3,8 +3,9 @@
   vertical-align:top;
   margin-right: 2%;
   max-width: 300px;
-  padding: 0.5px 5px;
-  background-color: antiquewhite;
+  padding: 1% 0.5%;
+  border-radius: 5px;
+  background-color: red;
   width: 100%;
 }
 

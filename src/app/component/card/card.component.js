@@ -1,9 +1,8 @@
 function taskCardController($scope) {
-  let $ctrl = this;
-
+  const $ctrl = this;
   $ctrl.$onInit = function () {
-    $scope.title = $ctrl.card.title;
-    $scope.description = $ctrl.card.description;
+    $scope.title        = $ctrl.card.title;
+    $scope.description  = $ctrl.card.description;
   }
 
   $scope.drop = (ev) => {

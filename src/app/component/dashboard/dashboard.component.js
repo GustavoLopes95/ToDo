@@ -13,6 +13,19 @@ function dashboardController($scope) {
           description: 'Lorem Ipsum is simply dummy text of the printing'
         })
       ]
+    }),
+    new TaskColumn({
+      title: 'Trabalhando',
+      cards: [
+        new Card({
+          title: 'Ipsum is simply dummy',
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
+        }),
+        new Card({
+          title: 'the printing and ',
+          description: 'Lorem Ipsum is simply dummy text of the printing'
+        })
+      ]
     })
   ];
 }
