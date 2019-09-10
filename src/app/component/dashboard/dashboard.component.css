@@ -1,3 +1,7 @@
 #main {
   height: 920px;
 }
+
+#main ul {
+  text-align: center;
+}

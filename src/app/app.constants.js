@@ -1,0 +1,1 @@
+const BASE_ENDPOINT = 'https://api.portalflex.com.br';

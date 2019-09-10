@@ -1,8 +1,30 @@
 <div class='container-fluid'>
   <section id="main">
-    <task-column 
-      data="taskColumn"
-      ng-repeat="taskColumn in taskColumns track by taskColumn.id">
-    </task-column>
+      <div class="text-center">
+        <h1>AngularJS Test</h1>
+        <br>
+        <!-- items being paged -->
+        <div ng-repeat="item in $ctrl.data">{{item}}</div>
+        
+        <!-- pager -->
+        <ul ng-if="$ctrl.pager.pages.length" class="pagination justify-content-center">
+          <li ng-class="{disabled:$ctrl.pager.currentPage === 1}" class='page-item'>
+            <a ng-click="$ctrl.setPage(1)" class='page-link'>First</a>
+          </li>
+          <li ng-class="{disabled:$ctrl.pager.currentPage === 1}" class='page-item'>
+            <a ng-click="$ctrl.setPage($ctrl.pager.currentPage - 1)" class='page-link'>Previous</a>
+          </li>
+          <li ng-repeat="page in $ctrl.pager.pages" ng-class="{active:$ctrl.pager.currentPage === page}" class='page-item'>
+            <a ng-click="$ctrl.setPage(page)" class='page-link' class='page-link'>{{page}}</a>
+          </li>                
+          <li ng-class="{disabled:$ctrl.pager.currentPage === $ctrl.pager.totalPages}" class='page-item'>
+            <a ng-click="$ctrl.setPage($ctrl.pager.currentPage + 1)" class='page-link'>Next</a>
+          </li>
+          <li ng-class="{disabled:$ctrl.pager.currentPage === $ctrl.pager.totalPages}" class='page-item'>
+            <a ng-click="$ctrl.setPage($ctrl.pager.totalPages)" class='page-link'>Last</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
 </div>

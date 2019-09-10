@@ -2,6 +2,7 @@ const app = angular.module('todoApp',
   [
     'ngRoute', 
     'todoApp.dashboard',
+    'todoApp.login',
   ]);
 
 app.component('app', {
